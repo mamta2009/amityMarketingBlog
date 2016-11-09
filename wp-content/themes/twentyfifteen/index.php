@@ -52,13 +52,13 @@ get_header();
 			<img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/example.png" />
 		</div>
 		<div class="col-sm-12 index-beacon">
-			<h2 class="center">How Does Beacons Work?</h2>
+			<h2 class="center">How Do Beacons Work?</h2>
 			<div class="col-sm-3">
 				<div class="image-thumbnail">
 					<img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/beacon.png">
 				</div>
 				<div class="img-desc">
-					Each beacon has a Blutooth&reg; Low Enegery transmitter. It allows Bluetooth devices to broadcast or receive tiny and static pieces of data within short distances inches up to 100 feet.
+					Each beacon has a Bluetooth&reg; Low Enegery transmitter. It allows Bluetooth devices to broadcast or receive tiny and static pieces of data within short distances inches up to 100 feet.
 				</div>
 			</div>
 			<div class="col-sm-3">
