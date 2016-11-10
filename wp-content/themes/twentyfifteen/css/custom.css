@@ -80,6 +80,7 @@ ul#menu-main li a{
 	background-color: #FFFFFF;
 	border: none;
     margin: 0;
+    padding-bottom: 9px;
 }
 
 .navbar-default .menu-green{
