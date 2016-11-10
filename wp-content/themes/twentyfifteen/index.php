@@ -86,8 +86,10 @@ get_header();
 				</div>
 			</div>	
 			<div class="clearfix"></div>	
-			<h2 class="center">Beacons in Your Home</h2>
-			<img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/beacons_in_home.png"/>
+			<div class="index-beacon-home">
+				<h2 class="center">Beacons in Your Home</h2>
+				<img class="img-responsive" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/beacons_in_home.png"/>
+			</div>
 		</div>
 		<div class="col-sm-12 index-connected">
 			<h2 class="center">Stay Connected</h2>

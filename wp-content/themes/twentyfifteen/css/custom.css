@@ -163,6 +163,7 @@ ul#menu-main li a{
     -o-background-size: cover;*/
 }
 .index-example img{
+    margin: auto;
     width: 100%;
 }
 
@@ -181,9 +182,15 @@ ul#menu-main li a{
 	text-align: center;
 	margin-bottom: 40px;
 }
+.index-beacon img{
+    margin: auto;
+}
 .index-connected{
 	background-color: #50CDEC;
 	color:#005473;
+}
+.index-connected img{
+    margin: auto;
 }
 .index-connected h2{
 	text-align: center;
@@ -195,6 +202,27 @@ ul#menu-main li a{
 .index-connected button{
     width:auto;
 	margin-bottom: 5px; 
+}
+/*coming soon*/
+.page-template-coming-soon{
+    color: #0181B2;  
+}
+
+.page-template-coming-soon h1{
+    border-bottom: 2px solid #0181B2;
+    margin-bottom: 45px;
+    color: #0181B2;
+}
+
+.page-template-coming-soon .coming-soon{
+    font-size: 45px;
+}
+.page-template-coming-soon .coming-soon img {
+  margin: auto;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
 }
 
 /*blog content*/
