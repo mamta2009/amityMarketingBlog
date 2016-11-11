@@ -18,52 +18,22 @@ get_header(); ?>
 			<?php $args = array( 'posts_per_page' => -1, 
 			'post_type' => 'post' );
 			$postslist = new WP_Query( $args );
-			$count = 1;
-			
-			while ( $postslist->have_posts() ) : $postslist->the_post();
-
- if ($count%3 == 1)
-    {  
-         echo "<div class='blogcount'>";
-    }			
-			
+			while ( $postslist->have_posts() ) : $postslist->the_post(); 
 			$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_id()), 'large');
 			if($imgsrc[0] == null || $imgsrc[0] == '')
 				$image = '';
 			else
 				$image = $imgsrc[0];
-				
-				$tags=get_the_tags();
 			?>
 			<div class="col-sm-4">
 				<div class="blog-thumb">
-					<a href="<?php the_permalink();?>"><div class="img-cover-blog" style="border-radius:9px 9px 0 0;background-image: url(<?php echo $image;?>)"></div></a>
-					<div class="tags"><?php
-					foreach($tags as $tag)
-							{
-									echo $tag->name . ' ';
-							}?>
-							</div>
+					<a href="<?php the_permalink();?>"><div class="img-cover-blog" style="background-image: url(<?php echo $image;?>)"></div></a>
 					<div class="blog-thumb-info">
-						<h4><a href="<?php the_permalink();?>"><?php ucfirst(the_title());?></a></h4>
+						<h4><a href="<?php the_permalink();?>"><?php the_title();?></a></h4>
 					</div> <!-- /.blog-thumb-info -->						
 				</div><!-- /.blog-thum -->
-			</div> <!-- /.col-sm-6 -->	
-			
-			<?php
-			
-			 if ($count%3 == 0)
-    {
-        echo "</div>";
-    }
-	$count++;
-
-
-			endwhile;
-
-if ($count%3 != 1) echo "</div>";
-			?>
-			
+			</div> <!-- /.col-sm-6 -->			
+			<?php endwhile; ?>			
 		</div> <!-- /.row -->
 	</div> <!-- /.two-column-post-list -->
 </div> <!-- /.container -->

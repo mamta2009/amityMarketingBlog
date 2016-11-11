@@ -1,0 +1,67 @@
+/*
+Theme Name: Twenty Fifteen
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+.col-sm-4
+{
+margin-bottom:40px;
+}
+.blogcount
+{
+float:left;
+width:100%;
+}
+.blogcount div.col-sm-4:first-child .blog-thumb
+{
+border:1px solid #0181b2;
+}
+.blogcount div.blog-thumb
+{
+border:1px solid #8cc540;
+}
+
+.blogcount div.col-sm-4:last-child .blog-thumb
+{
+border:1px solid #e8b055;
+}
+.tags
+{
+float:left;
+width:100%;
+text-align:center;
+background:#8cc540;
+color:#fff;
+}
+.blogcount div.col-sm-4:first-child div.tags
+{
+background:#0181b2;
+}
+.blogcount div.col-sm-4:last-child div.tags
+{
+background:#e8b055;
+}
+.blog-thumb-info h4 a
+{
+color:#8cc540;
+}
+.blogcount div.col-sm-4:first-child div.blog-thumb-info h4 a
+{
+color:#0181b2;
+}
+.blogcount div.col-sm-4:last-child div.blog-thumb-info h4 a
+{
+color:#e8b055;
+}
